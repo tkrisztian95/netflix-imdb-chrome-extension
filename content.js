@@ -32,11 +32,11 @@ for (var i = 0, l = titleCards.length; i < l; i++) {
         fetchIMDBValue(title).then(function (result) {
             var innerHTML = '<p style="background-color: red; \
             height: 15px; \
-            width: 50px; \
+            width: 75px; \
             z-index: 999999; \
             margin-top: 0px; \
             position: absolute; \
-            top:0; right:0;">'+ "IMDB rating: " + result + '</p>';
+            top:0; right:0;">'+ "IMDb rating: " + result + '</p>';
             console.log(result);
             elem.insertAdjacentHTML('afterbegin', innerHTML);
         });
