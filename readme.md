@@ -22,7 +22,11 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [X] Store titles and ratings in JSON format on local storage
 - [X] Encode uri to escape special characters
 - [X] Movie not found handling
+- [ ] Popup menu to set OMDb API key
+- [x] Default Icon
 
-Extras:
-- [ ] Reasearch other IMDb rating provider API
-- [ ] Some GUI (Icon, menu, user options)
+# Extras:
+- [ ] Icon sizes
+
+# Needs fix
+- [ ] After page reload, the rating not shows
