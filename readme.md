@@ -1,10 +1,12 @@
-# 
+# Browse NETFLIX with IMDb rating support
 The extension makes it easier for you to decide which movie you want to watch based on Imdb rating. 
 
 ## Screenshots
+![Screenshot](resources/capture.PNG)
 
 ## How to use:
 Hover the selected title card with your mouse. After you hover a movie card with your mouse the rating will be appear on the top right corner.
+![Screenrecord](resources/capture.gif)
 
 # Tasks & Imporvements
 
