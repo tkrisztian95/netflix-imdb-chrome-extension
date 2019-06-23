@@ -5,10 +5,10 @@ The extension makes it easier for you to decide which movie you want to watch ba
 ![Screenshot](resources/capture.PNG)
 
 ## How it works:
-After you hovered a movie card with your cursor the rating will appear on the top right corner.
-![Screenrecord](resources/capture.gif)
+The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
 
-The extension fetch the movie details and extreact the rating from the [OMDB API](https://www.omdbapi.com/) response.
+After you hovered a movie card with your cursor the rating will appear on the top right corner. 
+![Screenrecord](resources/capture.gif)
 
 # Tasks & Imporvements
 
