@@ -1,14 +1,22 @@
 {
     "manifest_version": 2,
-   
-    "name": "NETFLIX with IMDB rating",
+    "name": "NETFLIX with IMDb rating",
     "version": "0.1.0",
-    "description": "Show IMDB rating on Netfilx title cards",
-   
-    "content_scripts": [{
-      "css": ["styles.css"],
-      "js": ["content.js"],
-      "matches": ["https://www.netflix.com/browse"]
-    }]
-   
-  }
+    "description": "Browse NETFLIX with IMDb ratings",
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://www.netflix.com/browse"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}

@@ -1,11 +1,19 @@
 var apiKey = '';
+var localStorageKey = "imdb_ratings";
 
 const fetchImdbRating = async (title) => {
     console.log('Fetching imdb rating of: "' + title + '"');
-    const response = await fetch('https://www.omdbapi.com/?apikey=' + apiKey + '&t=' + title);
+    const response = await fetch(encodeURI('https://www.omdbapi.com/?apikey=' + apiKey + '&t=' + title));
     const myJson = await response.json(); //extract JSON from the http response
+
     var imdbRating = myJson.imdbRating;
-    console.log('Fetched imdb rating of: "' + title + ' is ' + imdbRating);
+
+    if (myJson["Error"] && myJson["Error"] === "Movie not found!") {
+        console.log("Movie not found:" + title);
+        imdbRating = "Not found";
+    } else {
+        console.log('Fetched imdb rating of: "' + title + ' is ' + imdbRating);
+    }
     return imdbRating;
 }
 
@@ -40,10 +48,10 @@ function getTitleFromCard(elem) {
 function addRatingToTitleCardElement(elem) {
     if (!elem.hasAttribute("imdb-rating")) {
         var title = getTitleFromCard(elem);
-        var ratingInLocalStorage = localStorage.getItem(title);
+        var ratingInLocalStorage = getRatingFromLocalStorage(title);
         if (!ratingInLocalStorage) {
             fetchImdbRating(title).then(function (imdbRating) {
-                localStorage.setItem(title, imdbRating);
+                storeRatingInLocalStorage(title, imdbRating);
                 elem.insertAdjacentHTML('beforeend', getInnerHTML(imdbRating));
                 elem.setAttribute("imdb-rating", imdbRating);
             });
@@ -54,8 +62,25 @@ function addRatingToTitleCardElement(elem) {
     }
 }
 
-function checkDOMChange()
-{
+function storeRatingInLocalStorage(title, rating) {
+    if (title && rating && rating !== "Not found") {
+        var ratingsInStorage = JSON.parse(localStorage.getItem(localStorageKey));
+        if (!ratingsInStorage) {
+            ratingsInStorage = {};
+        }
+        ratingsInStorage[title] = rating;
+        localStorage.setItem(localStorageKey, JSON.stringify(ratingsInStorage));
+    }
+}
+
+function getRatingFromLocalStorage(title) {
+    var ratingsInStorage = localStorage.getItem(localStorageKey);
+    var rating = ratingsInStorage && ratingsInStorage[title];
+    return rating;
+}
+
+
+function checkDOMChange() {
     // check for any new element being inserted here,
     // or a particular node being modified
     var titleCards = document.querySelectorAll('[id^="title-"]');
@@ -64,7 +89,7 @@ function checkDOMChange()
         delay(elem, addRatingToTitleCardElement);
     }
     // call the function again after 100 milliseconds
-    setTimeout( checkDOMChange, 100 );
+    setTimeout(checkDOMChange, 100);
 }
 
 checkDOMChange();
