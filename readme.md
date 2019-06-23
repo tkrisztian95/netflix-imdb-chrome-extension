@@ -17,16 +17,30 @@ After you hovered a movie card with your cursor the rating will appear on the to
 
 # Tasks & Imporvements
 
+# Needs fix
+- [ ] After page reload, the ratings not appears
+
+## v.0.1.0
 - [x] Show rating on titles which appeared just after user activity happend on page (e.g. Scroll down, slider)
 - [x] Use Chrome's local storage as cache to store already fetched ratings
 - [X] Store titles and ratings in JSON format on local storage
 - [X] Encode uri to escape special characters
 - [X] Movie not found handling
-- [ ] Popup menu to set OMDb API key
 - [x] Default Icon
-
-# Extras:
+- [ ] Popup menu to set OMDb API key
 - [ ] Icon sizes
+- [ ] Product hunt
+- [ ] Make repository public
 
-# Needs fix
-- [ ] After page reload, the rating not shows
+## v.0.2.0
+- [ ] Configurable color
+- [ ] Settings: Select color
+
+
+## v.0.3.0
+- [ ] Smooth opacity incrase animation when show ratings
+- [ ] Hide ratings after a minute
+- [ ] Settings: Hide timeout settings
+
+## v.1.0
+- [ ] Publish in Chrome extension store
