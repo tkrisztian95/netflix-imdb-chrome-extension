@@ -1,5 +1,5 @@
 # Browse NETFLIX with IMDb ratings 
-The extension displays IMDb rating of the movies on your Netflix's browse page. 
+The extension displays IMDb rating of the movies on your Netflix browse page. 
 
 ## Descriptions
 I often find myself in the situation I want to watch a new movie i have never seen but I dont want to waste my time and do the slection only based on a good cover photo.
