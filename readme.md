@@ -27,7 +27,7 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [X] Encode uri to escape special characters
 - [X] Movie not found handling
 - [x] Default Icon
-- [ ] Popup menu to set OMDb API key
+- [x] Popup menu to set OMDb API key
 - [ ] Icon sizes
 - [ ] Product hunt
 - [ ] Make repository public

@@ -1,5 +1,29 @@
-var apiKey = '';
-var localStorageKey = "imdb_ratings";
+const LOCAL_STORAGE_RATINGS = "imdb_ratings";
+const LOCAL_STORAGE_API_KEY = "omdb_apikey";
+
+var apiKey = "";
+
+chrome.storage.sync.get(LOCAL_STORAGE_API_KEY, function (result) {
+    console.log(result);
+    apiKey = result[LOCAL_STORAGE_API_KEY];
+    console.log("Api key loaded:" + apiKey)
+});
+
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+    for (var key in changes) {
+        var storageChange = changes[key];
+        if (key === LOCAL_STORAGE_API_KEY) {
+            console.log("Api key updated");
+            apiKey = storageChange.newValue;
+        }
+        console.log('Storage key "%s" in namespace "%s" changed. ' +
+            'Old value was "%s", new value is "%s".',
+            key,
+            namespace,
+            storageChange.oldValue,
+            storageChange.newValue);
+    }
+});
 
 const fetchImdbRating = async (title) => {
     console.log('Fetching imdb rating of: "' + title + '"');
@@ -64,17 +88,17 @@ function addRatingToTitleCardElement(elem) {
 
 function storeRatingInLocalStorage(title, rating) {
     if (title && rating && rating !== "Not found") {
-        var ratingsInStorage = JSON.parse(localStorage.getItem(localStorageKey));
+        var ratingsInStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_RATINGS));
         if (!ratingsInStorage) {
             ratingsInStorage = {};
         }
         ratingsInStorage[title] = rating;
-        localStorage.setItem(localStorageKey, JSON.stringify(ratingsInStorage));
+        localStorage.setItem(LOCAL_STORAGE_RATINGS, JSON.stringify(ratingsInStorage));
     }
 }
 
 function getRatingFromLocalStorage(title) {
-    var ratingsInStorage = localStorage.getItem(localStorageKey);
+    var ratingsInStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_RATINGS));
     var rating = ratingsInStorage && ratingsInStorage[title];
     return rating;
 }
