@@ -27,20 +27,21 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [X] Encode uri to escape special characters
 - [X] Movie not found handling
 - [x] Default Icon
-- [x] Popup menu to set OMDb API key
-- [ ] Icon sizes
+- [x] Store API key in local storage
+- [x] Setting on popup: Set OMDb API key
 - [ ] Product hunt
 - [ ] Make repository public
 
 ## v.0.2.0
+- [ ] Add icons in multiple sizes
 - [ ] Configurable color
-- [ ] Settings: Select color
+- [ ] Setting on popup: Select color
 
 
 ## v.0.3.0
 - [ ] Smooth opacity incrase animation when show ratings
 - [ ] Hide ratings after a minute
-- [ ] Settings: Hide timeout settings
+- [ ] Setting on popup: Hide timeout settings
 
 ## v.1.0
 - [ ] Publish in Chrome extension store
