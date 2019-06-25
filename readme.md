@@ -11,7 +11,9 @@ I often find myself in the situation I want to watch a new movie I have never se
 
 ### How it works:
 The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
+#### Provide API key
 
+#### Use
 After you hovered a movie card with your cursor the rating will appear on the top right corner. 
 ![Screenrecord](resources/capture.gif)
 
@@ -29,9 +31,10 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Default Icon
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
-- [ ] Style popup html
+- [x] Style popup html
 - [ ] Product hunt
 - [ ] Make repository public
+- [ ] Publish in Chrome extension store
 
 ## v.0.2.0
 - [ ] Add icons in multiple sizes
@@ -43,6 +46,3 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [ ] Smooth opacity incrase animation when show ratings
 - [ ] Hide ratings after a minute
 - [ ] Setting on popup: Hide timeout settings
-
-## v.1.0
-- [ ] Publish in Chrome extension store
