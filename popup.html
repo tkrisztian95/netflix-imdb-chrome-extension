@@ -2,16 +2,114 @@
 <html>
 
 <head>
-    <title>Netflix with IMdb ratings </title>   
+    <title>Netflix with IMdb ratings </title>
+    <style type="text/css">
+        .form-style-2 {
+            max-width: 500px;
+            padding: 20px 12px 10px 20px;
+            font: 13px Arial, Helvetica, sans-serif;
+        }
+
+        .form-style-2-heading {
+            font-weight: bold;
+            font-style: italic;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 15px;
+            padding-bottom: 3px;
+        }
+
+        .form-style-2 label {
+            display: block;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .form-style-2 label>span {
+            width: 100px;
+            font-weight: bold;
+            float: left;
+            padding-top: 8px;
+            padding-right: 5px;
+        }
+
+        .form-style-2 span.required {
+            color: red;
+        }
+
+        .form-style-2 .tel-number-field {
+            width: 40px;
+            text-align: center;
+        }
+
+        .form-style-2 input.input-field,
+        .form-style-2 .select-field {
+            width: 48%;
+        }
+
+        .form-style-2 input.input-field,
+
+        .form-style-2 .textarea-field,
+        .form-style-2 .select-field {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border: 1px solid #C2C2C2;
+            box-shadow: 1px 1px 4px #EBEBEB;
+            -moz-box-shadow: 1px 1px 4px #EBEBEB;
+            -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            padding: 7px;
+            outline: none;
+        }
+
+        .form-style-2 .input-field:focus,
+        .form-style-2 .textarea-field:focus,
+        .form-style-2 .select-field:focus {
+            border: 1px solid #0C0;
+        }
+
+        .form-style-2 .textarea-field {
+            height: 100px;
+            width: 55%;
+        }
+
+        .form-style-2 input[type=submit],
+        .form-style-2 input[type=button] {
+            border: none;
+            padding: 8px 15px 8px 15px;
+            background: #FF8500;
+            color: #fff;
+            box-shadow: 1px 1px 4px #DADADA;
+            -moz-box-shadow: 1px 1px 4px #DADADA;
+            -webkit-box-shadow: 1px 1px 4px #DADADA;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+        }
+
+        .form-style-2 input[type=submit]:hover,
+        .form-style-2 input[type=button]:hover {
+            background: #EA7B00;
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body style="background-color:rgb(255, 0, 21);width:160px;height:90px;">
-    <div id="settings">
+<body style="width:250px;">
+    <div class="form-style-2">
+        <div class="form-style-2-heading">NETFLIX with IMDb ratings</div>
+        <label ><span>1. Get api key:</span><a id="apikeyLink" href="http://www.omdbapi.com/apikey.aspx">OMDb webpage</a></label>
         <form>
-            OMDb API key:
-            <input id="apikey" type="text" name="apiKey">
+            <label for="apikey">
+                <span>2. Paste here:<span class="required">*</span></span>
+                <input id="apikey" class="input-field" type="text" name="apiKey" value="" />
+            </label>
+            <label><span id="display_message" style="display: none">Key saved!</span></label>
+            <label><span></span><input type="submit" value="Save" id="btnSetApiKey"></label>
+
         </form>
-        <button id="btnSetApiKey">Save</button>
         <script type="text/javascript" src="popup.js"></script>
     </div>
 </body>
