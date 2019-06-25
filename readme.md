@@ -32,6 +32,7 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Style popup html
 - [ ] Product hunt
 - [ ] Make repository public
+- [ ] Publish in Chrome extension store
 
 ## v.0.2.0
 - [ ] Add icons in multiple sizes
@@ -43,6 +44,3 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [ ] Smooth opacity incrase animation when show ratings
 - [ ] Hide ratings after a minute
 - [ ] Setting on popup: Hide timeout settings
-
-## v.1.0
-- [ ] Publish in Chrome extension store
