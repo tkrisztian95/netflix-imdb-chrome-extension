@@ -11,7 +11,9 @@ I often find myself in the situation I want to watch a new movie I have never se
 
 ### How it works:
 The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
+#### Provide API key
 
+#### Use
 After you hovered a movie card with your cursor the rating will appear on the top right corner. 
 ![Screenrecord](resources/capture.gif)
 
