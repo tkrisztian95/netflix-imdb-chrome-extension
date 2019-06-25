@@ -29,6 +29,7 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Default Icon
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
+- [ ] Style popup html
 - [ ] Product hunt
 - [ ] Make repository public
 
