@@ -35,9 +35,9 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
 - [x] Style popup html
+- [ ] Publish in Chrome extension store
 - [ ] Make repository public
 - [ ] Product hunt
-- [ ] Publish in Chrome extension store
 
 ## v.0.2.0
 - [ ] Add icons in multiple sizes
