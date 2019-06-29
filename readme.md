@@ -13,6 +13,7 @@ I often find myself in the situation I want to watch a new movie I have never se
 The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
 #### Provide API key
 [Get your free!!! OMDb API key](https://www.omdbapi.com/apikey.aspx) and then click on the extension's icon at the chrome toolbar. Paste and save it and you ready to use.
+![Screenshot](resources/capture2.PNG)
 
 #### In action
 After you hovered a movie card with your cursor the rating will appear on the top right corner. 
