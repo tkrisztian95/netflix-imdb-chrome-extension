@@ -4,7 +4,7 @@ The extension displays IMDb rating of the movies on your Netflix browse page. Do
 ## Description
 The extension makes it easier for you to decide which movie to watch based on IMDb rating if you care about. 
 
-I often find myself in the situation I want to watch a new movie I have never seen but I dont want to waste my time and do the selection just based on a good cover photo or the title. And I think that we all hate when we cannot choose a movie to watch in our short period of free time after an exhausting day at the office. Fortunately Netflix makes the choose easy for us because the browse page is full with better and better movies with good cover images. (No, its not that simple)
+I often find myself in the situation I want to watch a new movie I have never seen but I dont want to waste my time and do the selection just based on a good cover photo or title. And I think that we all hate when we cannot choose a movie to watch in our short period of free time after an exhausting day at the office. Fortunately Netflix makes the choose easy for us because the browse page is full with better and better movies with good cover images. (No, its not that simple)
 
 ### Screenshots
 ![Screenshot](resources/capture.PNG)
@@ -12,6 +12,7 @@ I often find myself in the situation I want to watch a new movie I have never se
 ### How it works:
 The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
 #### Provide API key
+[Get your free!!! OMDb API key](https://www.omdbapi.com/apikey.aspx) and then click on the extension's icon at the chrome toolbar. Paste and save it and you ready to use.
 
 #### Use
 After you hovered a movie card with your cursor the rating will appear on the top right corner. 
@@ -20,7 +21,7 @@ After you hovered a movie card with your cursor the rating will appear on the to
 # Tasks & Imporvements
 
 # Needs fix
-- [ ] After page reload, the ratings not appears
+- [ ] After page reload sometimes, the ratings not appears
 
 ## v.0.1.0
 - [x] Show rating on titles which appeared just after user activity happend on page (e.g. Scroll down, slider)
@@ -32,8 +33,8 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
 - [x] Style popup html
-- [ ] Product hunt
 - [ ] Make repository public
+- [ ] Product hunt
 - [ ] Publish in Chrome extension store
 
 ## v.0.2.0
