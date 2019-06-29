@@ -10,7 +10,7 @@ I often find myself in the situation I want to watch a new movie I have never se
 ![Screenshot](resources/capture.PNG)
 
 ### How it works:
-The extension fetch the movie details from the [OMDb API](https://www.omdbapi.com/) and display the ratings.
+The extension fetch the movie details from the [OMDb API Brian Fritz](https://www.omdbapi.com/) and display the ratings.
 #### Provide API key
 [Get your free!!! OMDb API key](https://www.omdbapi.com/apikey.aspx) and then click on the extension's icon at the chrome toolbar. Paste the key you got in email and save it and you ready to use.
 
