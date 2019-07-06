@@ -6,6 +6,8 @@ The extension makes it easier for you to decide which movie to watch based on IM
 
 I often find myself in the situation I want to watch a new movie I have never seen but I dont want to waste my time and do the selection just based on a good cover photo or title. And I think that we all hate when we cannot choose a movie to watch in our short period of free time after an exhausting day at the office. Fortunately Netflix makes the choose easy for us because the browse page is full with better and better movies with good cover images. (No, its not that simple)
 
+** Disclaimer ** Netflix and IMDb are registered trademarks, this extension is not affiliated with Netflix nor IMDb.
+
 ### Screenshots
 ![Screenshot](resources/capture.PNG)
 
@@ -17,15 +19,12 @@ The extension fetch the movie details from the [OMDb API Brian Fritz](https://ww
 ![Screenshot](resources/capture2.PNG)
 
 #### In action
-After you hovered a movie card with your cursor the rating will appear on the top right corner. 
+After you hovered a movie card with your cursor the rating will appear on the top right corner.
 ![Screenrecord](resources/capture.gif)
 
 # Tasks & Imporvements
 
-# Needs fix
-- [ ] After page reload sometimes, the ratings not appears
-
-## v.0.1.0
+## v.0.0.1
 - [x] Show rating on titles which appeared just after user activity happend on page (e.g. Scroll down, slider)
 - [x] Use Chrome's local storage as cache to store already fetched ratings
 - [X] Store titles and ratings in JSON format on local storage
@@ -35,17 +34,4 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
 - [x] Style popup html
-- [ ] Publish in Chrome extension store
-- [ ] Make repository public
-- [ ] Product hunt
-
-## v.0.2.0
-- [ ] Add icons in multiple sizes
-- [ ] Configurable color
-- [ ] Setting on popup: Select color
-
-
-## v.0.3.0
-- [ ] Smooth opacity incrase animation when show ratings
-- [ ] Hide ratings after a minute
-- [ ] Setting on popup: Hide timeout settings
+- [x] Add icons in multiple sizes
