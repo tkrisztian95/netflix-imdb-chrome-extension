@@ -30,7 +30,6 @@ After you hovered a movie card with your cursor the rating will appear on the to
 - [X] Store titles and ratings in JSON format on local storage
 - [X] Encode uri to escape special characters
 - [X] Movie not found handling
-- [x] Default Icon
 - [x] Store API key in local storage
 - [x] Setting on popup: Set OMDb API key
 - [x] Style popup html
