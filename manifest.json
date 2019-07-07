@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "NETFLIX with IMDb rating",
+    "name": "NETFLIX browse with IMDb rating",
     "author": "Tóth Krisztián Gyula",
     "version": "0.0.1",
-    "description": "Browse NETFLIX with IMDb ratings",
+    "description": "Browse NETFLIX with IMDb ratings shown on title cards",
     "icons": {
         "128": "icon128.png",
         "16": "icon16.png",
