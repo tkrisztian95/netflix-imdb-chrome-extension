@@ -1,5 +1,7 @@
 # Browse NETFLIX with IMDb ratings 
-The extension displays IMDb rating of the movies on your Netflix browse page. Don't waste your time with looking after movie ratings on IMDb webpage any more. [Chrome Web store install link](https://chrome.google.com/webstore/detail/bgioekpgighagonidghmhjlbphlpjioa)
+The extension displays IMDb rating of the movies on your Netflix browse page. Don't waste your time with looking after movie ratings on IMDb webpage any more. 
+
+<a target="_blank" href="https://chrome.google.com/webstore/detail/bgioekpgighagonidghmhjlbphlpjioa">![Try it now in CWS](https://raw.github.com/GoogleChrome/chrome-app-samples/master/tryitnowbutton.png "Click here to install this from the Chrome Web Store")</a>
 
 ## Description
 The extension makes it easier for you to decide which movie to watch based on IMDb rating if you care about. 
