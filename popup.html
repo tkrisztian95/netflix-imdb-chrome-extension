@@ -1,34 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Netflix with IMdb ratings</title>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Show IMDb rating on Netflix chrome extension"
+        />
+        <meta name="author" content="Tóth Krisztián Gyula" />
+        <!-- Style Sheets -->
+        <link href="css/popup.css" rel="stylesheet" media="screen" />
+    </head>
 
-<head>
-    <title>Netflix with IMdb ratings </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Show IMDb rating on Netflix chrome extension">
-    <meta name="author" content="Tóth Krisztián Gyula">
-    <!-- Style Sheets -->
-    <link href="css/popup.css" rel="stylesheet" media="screen">
-</head>
-
-<body>
-    <div class="form-style-2">
-        <div class="form-style-2-heading"><a style="color: #E50914; background-color: #221F1F;">NETFLIX</a> with <a
-                style="background-color: #f3ce13">IMDb</a>
-            rating</div>
-        <label><span>1. Get api key:</span><a id="apikeyLink" href="http://www.omdbapi.com/apikey.aspx">OMDb
-                webpage</a></label>
-        <form>
-            <label for="apikey">
-                <span>2. Paste here:<span class="required">*</span></span>
-                <input id="apikey" class="input-field" type="text" name="apiKey" value="" />
-            </label>
-            <label><span id="display_message" style="display: none">Key saved!</span></label>
-            <label><span></span><input type="submit" value="Save" id="btnSetApiKey"></label>
-
-        </form>
-        <!-- Scripts -->
-        <script type="text/javascript" src="js/popup.js"></script>
-    </div>
-</body>
-
+    <body>
+        <div class="form-style-2">
+            <div class="form-style-2-heading">
+                <a style="color: #e50914; background-color: #221f1f">NETFLIX</a>
+                with <a style="background-color: #f3ce13">IMDb</a> rating
+            </div>
+            <label
+                ><span>1. Get api key:</span
+                ><a id="apikeyLink" href="http://www.omdbapi.com/apikey.aspx"
+                    >OMDb webpage</a
+                ></label
+            >
+            <form>
+                <label for="apikey">
+                    <span>2. Paste here:<span class="required">*</span></span>
+                    <input
+                        id="apikey"
+                        class="input-field"
+                        type="text"
+                        name="apiKey"
+                        value=""
+                    />
+                </label>
+                <label
+                    ><span id="display_message" style="display: none"
+                        >Key saved!</span
+                    ></label
+                >
+                <label
+                    ><span></span
+                    ><input type="submit" value="Save" id="btnSetApiKey"
+                /></label>
+            </form>
+            <!-- Scripts -->
+            <script type="text/javascript" src="js/popup.js"></script>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,23 @@
+{
+    "name": "netflix-imdb-chrome-extension",
+    "version": "1.0.0",
+    "description": "The extension displays IMDb rating of the movies on your Netflix browse page. Don't waste your time with looking after movie ratings on IMDb webpage any more.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d-x90/netflix-imdb-chrome-extension.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/d-x90/netflix-imdb-chrome-extension/issues"
+    },
+    "homepage": "https://github.com/d-x90/netflix-imdb-chrome-extension#readme",
+    "dependencies": {
+        "prettier": "^2.2.1"
+    }
+}

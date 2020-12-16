@@ -11,21 +11,12 @@
     },
     "content_scripts": [
         {
-            "css": [
-                "css/styles.css"
-            ],
-            "js": [
-                "js/content.js"
-            ],
-            "matches": [
-                "https://www.netflix.com/browse"
-            ]
+            "css": ["css/styles.css"],
+            "js": ["js/content.js"],
+            "matches": ["https://www.netflix.com/browse"]
         }
     ],
-    "permissions": [
-        "storage",
-        "tabs"
-    ],
+    "permissions": ["storage", "tabs"],
     "browser_action": {
         "default_popup": "popup.html"
     }
