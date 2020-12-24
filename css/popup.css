@@ -22,7 +22,7 @@ body {
     margin: 0px 0px 15px 0px;
 }
 
-.form-style-2 label>span {
+.form-style-2 label > span {
     width: 100px;
     font-weight: bold;
     float: left;
@@ -45,16 +45,15 @@ body {
 }
 
 .form-style-2 input.input-field,
-
 .form-style-2 .textarea-field,
 .form-style-2 .select-field {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border: 1px solid #C2C2C2;
-    box-shadow: 1px 1px 4px #EBEBEB;
-    -moz-box-shadow: 1px 1px 4px #EBEBEB;
-    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border: 1px solid #c2c2c2;
+    box-shadow: 1px 1px 4px #ebebeb;
+    -moz-box-shadow: 1px 1px 4px #ebebeb;
+    -webkit-box-shadow: 1px 1px 4px #ebebeb;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -65,7 +64,7 @@ body {
 .form-style-2 .input-field:focus,
 .form-style-2 .textarea-field:focus,
 .form-style-2 .select-field:focus {
-    border: 1px solid #0C0;
+    border: 1px solid #0c0;
 }
 
 .form-style-2 .textarea-field {
@@ -73,22 +72,22 @@ body {
     width: 55%;
 }
 
-.form-style-2 input[type=submit],
-.form-style-2 input[type=button] {
+.form-style-2 input[type='submit'],
+.form-style-2 input[type='button'] {
     border: none;
     padding: 8px 15px 8px 15px;
-    background: #FF8500;
+    background: #ff8500;
     color: #fff;
-    box-shadow: 1px 1px 4px #DADADA;
-    -moz-box-shadow: 1px 1px 4px #DADADA;
-    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    box-shadow: 1px 1px 4px #dadada;
+    -moz-box-shadow: 1px 1px 4px #dadada;
+    -webkit-box-shadow: 1px 1px 4px #dadada;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
 }
 
-.form-style-2 input[type=submit]:hover,
-.form-style-2 input[type=button]:hover {
-    background: #EA7B00;
+.form-style-2 input[type='submit']:hover,
+.form-style-2 input[type='button']:hover {
+    background: #ea7b00;
     color: #fff;
 }
